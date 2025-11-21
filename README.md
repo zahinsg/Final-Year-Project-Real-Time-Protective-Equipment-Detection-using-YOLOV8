@@ -34,15 +34,18 @@ CHAT_ID = '987654321'
 
 
 ⚠️ Security Note: Never share your Telegram Token publicly. If you push this code to GitHub, it is recommended to use Environment Variables (.env) instead of hardcoding tokens directly into the script.
+
+
 🚀 Usage
 Enable Camera: Ensure your webcam is active. If you are using a phone as a webcam (e.g., via DroidCam), ensure the connection is established before running the script.
 Run the Script: Execute the Python script from your terminal:
 python prototype.py
 
-NOTE: the other script is for preprocessing data, if you want to custom trained your data, use at your own will
-Operation: The system will open a window displaying the live feed with detection bounding boxes. Telegram alerts will be sent based on the logic defined in the script.
+
 📝 Troubleshooting
 Camera Error: If OpenCV cannot open the camera, change the video source index in the code (usually cv2.VideoCapture(0) to cv2.VideoCapture(1)).
 Model Not Found: Ensure best.pt is in the exact same folder as prototype.py or provide the absolute file path.
 
 
+NOTE: the other script is for preprocessing data, if you want to custom trained your data, use at your own will
+Operation: The system will open a window displaying the live feed with detection bounding boxes. Telegram alerts will be sent based on the logic defined in the script.
